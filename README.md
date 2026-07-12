@@ -22,15 +22,13 @@ oofpp_habits_project/
    ├── Screenshot 2025-09-14 224642.png
    ├── Screenshot 2025-09-15 151325.png
    └── Screenshot 2026-07-12 155756.png  
-├── habit.py           
-├── database.py        
-├── analytics.py       
-├── seed_data.py       
-├── cli.py             
-├── requirements.txt   
-└── tests/
-   ├── conftest.py    
-   └── test_habits.py 
+├── .gitignore  
+├── db.py           
+├── habit_tracker.py        
+├── main.py       
+├── README.md       
+├── requirements.txt            
+└──  test.py   
 ```
 
 ## UML Class Diagram
