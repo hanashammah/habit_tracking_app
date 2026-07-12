@@ -1,5 +1,5 @@
 # Habit Tracker Application
-This is a python backend for a habit tracking application I built for the IU portfolio course using Object-Oriented and Functional Programming with Python.
+This is a Python backend for a habit tracking application built using object-oriented and functional programming.
 
 ## Overview
 This application allows users to create, manage, edit, and delete daily and weekly habits. Users can mark habits as completed, view predefined habits, and track their progress through reports and streak analytics.

@@ -45,7 +45,7 @@ def run_cli():
             ]
         ).ask()
 
-        # ---------------- Adding a habit ----------------
+        # Adding a habit
         if action == " ➕  Create a habit":
             habit_name = questionary.text("Habit name:").ask().strip().lower()
             category = questionary.select(
@@ -73,7 +73,7 @@ def run_cli():
             creator.add_habit(habit_name, category, frequency, duration, DB_FILE)
 
 
-        # ---------------- Editing habits ----------------
+        # Editing habits
         elif action == " ✏️ Modify habit details":
             if not habits_list:
                 print("⚠️ No habits available to edit.\n")
@@ -92,7 +92,7 @@ def run_cli():
 
             print(f"✏️ Habit '{target}' updated!\n")
 
-        # ---------------- viewing Reports ----------------
+        # viewing Reports
         elif action == " 📊 View Reports":
             if not habits_list:
                 print("⚠️ No habits available. Add one first.\n")
@@ -113,7 +113,7 @@ def run_cli():
 
             print("")
 
-        # ----------------- Check-off when done ----------------
+        # Check-off when done
         elif action == " ✅  Check-off":
             if not habits_list:
                 print("⚠️ No habits available. Add one first.\n")
@@ -124,12 +124,12 @@ def run_cli():
 
             print("")
 
-        # ---------------- Predefined habits ----------------
+        # Predefined habits
         elif action == " 📂 View predefined habits":
             presets.show_all(PRESET_DB_FILE)
             print("")
 
-        # ---------------- Removing a habit ----------------
+        # Removing a habit
         elif action == " 🗑️Remove a habit":
             if not habits_list:
                 print("⚠️ No habits available to delete.\n")
@@ -140,7 +140,7 @@ def run_cli():
 
             print(f"🗑️ Habit '{target}' removed!\n")
 
-        # ---------------- Exit ----------------
+        # Exit
         elif action == " 🚪 Exit":
             print("👋 Thanks for using Habit Tracker. Goodbye!\n")
             break
